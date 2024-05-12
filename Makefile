@@ -19,7 +19,7 @@ docker_bash:
 ####
 # Project
 ####
-run:
+app:
 	python /code/source/app.py my-command --a 1 --b 2
 
 linting:
