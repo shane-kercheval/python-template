@@ -1,3 +1,4 @@
+.PHONY: tests app
 ####
 # DOCKER
 ####
