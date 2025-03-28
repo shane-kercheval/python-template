@@ -8,10 +8,10 @@ build:
 	uv sync
 
 app:
-	uv run python ./source/app.py my-command --a 1 --b 2
+	uv run python ./src/app.py my-command --a 1 --b 2
 
 linting:
-	uv run ruff check source
+	uv run ruff check src
 	uv run ruff check tests
 
 unittests:

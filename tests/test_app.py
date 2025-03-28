@@ -1,5 +1,5 @@
 """Test utilities.py."""
-from source.app import my_function
+from app import my_function
 
 
 def test__my_function() -> None:
