@@ -1,5 +1,7 @@
 .PHONY: tests app build
 
+-include .env
+export
 
 ####
 # Project
@@ -24,6 +26,15 @@ tests: linting unittests
 
 open_coverage:
 	open 'htmlcov/index.html'
+
+package-build:
+	rm -rf dist/*
+	uv build --no-sources
+
+package-publish:
+	uv publish --token ${UV_PUBLISH_TOKEN}
+
+package: package-build package-publish
 
 # ####
 # # DOCKER
